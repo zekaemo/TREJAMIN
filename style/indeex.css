@@ -1,0 +1,570 @@
+/*CONVERT TO REM DONE*/
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  /* Reset margin pada body */
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /*STYLE MAIN PAGE*/
+  .main-container {
+    background: #f6f9ff;
+  }
+  
+  /*STYLE HEADER*/
+  .header-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0.5625rem 1.25rem; 
+    background: #ffffff;
+    z-index: 200;
+    box-shadow: 0 0.125rem 1.25rem 0 rgba(1, 41, 112, 0.1); 
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 0.3125rem; 
+    position: relative;
+    width: 17.5rem; 
+    padding: 0.5rem 0; 
+    left: -0.9375rem; 
+
+  }
+  .link {
+    flex-shrink: 0;
+    position: relative;
+    width: 17.5rem; 
+    height: 1.625rem; 
+    z-index: 148;
+  }
+  
+
+  /*STYLE TULISAN TREJAMIN*/
+  .tre-jamin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 2.1875rem; /* 35px converted to rem */
+    top: -0.1875rem; /* -3px converted to rem */
+    left: 6.25rem; /* 100px converted to rem */
+    color: #012970;
+    font-family: Nunito, var(--default-font-family);
+    font-size: 1.625rem; /* 26px converted to rem */
+    font-weight: 700;
+    line-height: 1.625rem; /* 26px converted to rem */
+    text-align: left;
+    white-space: nowrap;
+    z-index: 149;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 1.5625rem; /* 25px converted to rem */
+    position: relative;
+    min-width: 0;
+    padding: 0 1rem 0 0; /* 16px converted to rem */
+    z-index: 152;
+  }
+  
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 1.75rem; /* 28px converted to rem */
+    height: 1.6875rem; /* 27px converted to rem */
+    z-index: 153;
+  }
+  
+  
+  .link-1 {
+    flex-shrink: 0;
+    position: relative;
+    width: 8.598625rem; /* 137.578px converted to rem */
+    height: 2.25rem; /* 36px converted to rem */
+    z-index: 155;
+  }
+  
+  .profile-image {
+    position: absolute;
+    width: 2.25rem; /* 36px converted to rem */
+    height: 2.25rem; /* 36px converted to rem */
+    top: 50%;
+    left: 0;
+    background: url(./assets/images/62f859dc-e883-4e4b-a950-67f1ae449475.png) no-repeat center;
+    background-size: cover;
+    transform: translate(0, -50%);
+    z-index: 2;
+    border-radius: 50%; /* Fully round the image */
+  }
+  
+  .text {
+    position: absolute;
+    width: 6.348625rem; /* 101.578px converted to rem */
+    height: 1.3125rem; /* 21px converted to rem */
+    top: 50%;
+    left: 2.25rem; /* 36px converted to rem */
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+  
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 1.3125rem; 
+    top: 0;
+    left: 0.5rem; 
+    color: #012970;
+    font-family: Open Sans, var(--default-font-family);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3125rem; 
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  
+
+ /* TEXT "SURAT MASUK" */
+.text-container h1 {
+  color: #012970;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+  margin-top: -0.3rem;
+  margin-left: 1.25rem;
+  width: 62.5rem;
+  z-index: 1;
+}
+
+/*TEXT 'SILAHKAN ISI SURAT MASUK' */
+.text-container h2 {
+  color: #0c1018;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 2.3125rem;
+  margin-left: 1.375rem;
+  width: 62.5rem;
+  z-index: 1;
+}
+        
+/*FONT PILIHAN BAGIAN*/
+select {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+        /*SIDEBAR*/
+.flex-row {
+  position: relative;
+  width: 75rem;
+  height: 52.5625rem;
+  margin: 0;
+  z-index: 159;
+}
+
+.sidebar-section {
+  position: fixed;
+  top: 3.75rem;
+  left: 0;
+  width: 18.75rem;
+  height: calc(100% - 3.75rem);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 16.25rem;
+  margin: 0;
+  z-index: 160;
+}
+
+.track {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 1.0625rem;
+  color: #899bbd;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.03125rem;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 161;
+}
+
+.link-2 {
+  flex-shrink: 0;
+  position: relative;
+  width: 16.25rem;
+  height: 2.75rem;
+  background: #ffffff;
+  z-index: 162;
+  border-radius: 0.25rem;
+}
+
+.file-spreadsheet {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.625rem;
+  left: 0.625rem;
+  z-index: 164;
+  overflow: hidden;
+}
+
+.group-3 {
+  position: relative;
+  width: 1rem;
+  height: 1.25rem;
+  margin: 0.125rem 0 0 0.25rem;
+  background: url(./assets/images/15e50af4-5509-4c47-a29e-015da2062758.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 165;
+}
+
+.surat-masuk {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 1.4375rem;
+  top: 0.671875rem;
+  left: 2.5625rem;
+  color: #012970;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.40625rem;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 163;
+}
+
+.link-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 16.25rem;
+  height: 2.75rem;
+  background: #ffffff;
+  z-index: 166;
+  border-radius: 0.25rem;
+}
+
+.file-spreadsheet-5 {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0.625rem;
+  left: 0.625rem;
+  z-index: 168;
+  overflow: hidden;
+}
+
+.group-6 {
+  position: relative;
+  width: 1rem;
+  height: 1.25rem;
+  margin: 0.125rem 0 0 0.25rem;
+  background: url(./assets/images/4a771d3b-0488-40d5-a6a6-a47008f1306c.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 169;
+}
+
+.surat-keluar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 1.4375rem;
+  top: 0.671875rem;
+  left: 2.5625rem;
+  color: #012970;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.40625rem;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 167;
+}
+
+.input {
+  display: block;
+  position: relative;
+  height: 1.0625rem;
+  color: #899bbd;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.03125rem;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 170;
+}
+
+.link-7 {
+  position: relative;
+  width: 16.25rem;
+  height: 2.75rem;
+  margin: 0;
+  background: #ffffff;
+  z-index: 171;
+  border-radius: 0.25rem;
+}
+
+.input-surat-masuk {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 1.4375rem;
+  top: 0.671875rem;
+  left: 2.5625rem;
+  color: #012970;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.40625rem;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 173;
+}
+
+.flex-column {
+  position: absolute;
+  width: 6.23%;
+  height: 43.18%;
+  top: 25%;
+  left: 5.77%;
+  z-index: 174;
+}
+
+.download-section {
+  position: absolute;
+  width: 98.77%;
+  height: 94.74%;
+  top: 0;
+  left: 0;
+  z-index: 174;
+  overflow: hidden;
+}
+
+.icon {
+  position: relative;
+  width: 0.875rem;
+  height: 0.96875rem;
+  margin: 0.078125rem 0 0 0.0625rem;
+  background: url(./assets/images/5e7758c5-dda7-4e88-b8f4-e62732b908fe.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 175;
+}
+
+.unknown-8 {
+  position: absolute;
+  width: 1.0125rem;
+  height: 1rem;
+  top: 0.1875rem;
+  left: 0;
+  font-family: Inter, var(--default-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  background: url(./assets/images/01285c3c-4353-4c45-aef7-ee6ae3ff669b.png) no-repeat center;
+  background-size: cover;
+  z-index: 172;
+}
+
+.link-9 { 
+  position: relative;
+  width: 16.25rem;
+  height: 2.75rem;
+  margin: 0;
+  background: #ffffff;
+  z-index: 176;
+  border-radius: 0.25rem;
+}
+
+.input-surat-keluar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 1.4375rem;
+  top: 0.671875rem;
+  left: 2.5625rem;
+  color: #012970;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.40625rem;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 178;
+}
+
+.flex-column-a {
+  position: absolute;
+  width: 6.23%;
+  height: 43.18%;
+  top: 25%;
+  left: 5.77%;
+  z-index: 179;
+}
+
+.download-section-b {
+  position: absolute;
+  width: 98.77%;
+  height: 94.74%;
+  top: 0;
+  left: 0;
+  z-index: 179;
+  overflow: hidden;
+}
+
+.icon-c {
+  position: relative;
+  width: 0.875rem;
+  height: 0.96875rem;
+  margin: 0.078125rem 0 0 0.0625rem;
+  background: url(./assets/images/2f63a975-2851-4a52-b797-9bf9bb5dcffb.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 180;
+}
+
+        
+        /*----------------TAMBAHAN-----------------*/
+
+/* Menghilangkan dekorasi dan mengatur warna link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover .input-surat-masuk,
+a:hover .input-surat-keluar,
+a:hover .surat-masuk,
+a:hover .surat-keluar {
+  text-decoration: underline;
+}
+
+.date-picker {
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 1.25rem; /* Adjusted to rem for consistency */
+  margin-left: 20.6rem;
+  margin-top: 0.625rem;
+}
+
+.section-diagram {
+  position: absolute;
+  width: 70%; /* Adjust the width as needed */
+  max-height: 150px;
+  margin-left: 20.6rem;
+  margin-top: 4.375rem;
+}
+
+.diagram {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 53.125rem;
+  max-height: 25rem;
+}
+
+canvas#myChart {
+  width: 100%;
+  height: auto;
+}
+
+#monthYearPicker {
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-family: Nunito, var(--default-font-family);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border: 0px solid #cccccc;
+  border-radius: 0.25rem;
+  margin-right: 0.625rem;
+}
+
+#updateChart {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-family: Nunito, var(--default-font-family);
+  color: #ffffff;
+  background-color: #012970;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#updateChart:hover {
+  background-color: #0056b3;
+}
+
+        
+        
+
+        
+
+

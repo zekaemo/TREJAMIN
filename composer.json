@@ -1,0 +1,17 @@
+{
+    "name": "trejamin/export",
+    "autoload": {
+        "psr-4": {
+            "Trejamin\\Export\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FahmiRizqyPerbawaNugraha",
+            "email": "fahmirizqy9@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.2"
+    }
+}

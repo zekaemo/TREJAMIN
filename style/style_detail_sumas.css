@@ -1,0 +1,812 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+/* Reset margin pada body */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*STYLE MAIN PAGE*/
+.main-container {
+  background: #f6f9ff;
+}
+
+/*STYLE HEADER*/
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.5625rem 1.25rem; /* Padding (9px dan 20px konversi ke rem) */
+  background: #ffffff;
+  z-index: 200;
+  box-shadow: 0 0.125rem 1.25rem rgba(1, 41, 112, 0.1); /* Box shadow (2px konversi ke rem) */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 0.3125rem; /* Jarak antar elemen (5px konversi ke rem) */
+  position: relative;
+  width: 17.5rem; /* Lebar (280px konversi ke rem) */
+  padding: 0.5rem 0; /* Padding (8px konversi ke rem) */
+  left: -0.9375rem; /* Posisi kiri (15px konversi ke rem) */
+}
+
+.link {
+  flex-shrink: 0;
+  position: relative;
+  width: 17.5rem; /* Lebar (280px konversi ke rem) */
+  height: 1.625rem; /* Tinggi (26px konversi ke rem) */
+  z-index: 148;
+}
+
+/* STYLE TULISAN TREJAMIN */
+.tre-jamin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 2.1875rem; /* Tinggi (35px konversi ke rem) */
+  top: -0.1875rem; /* Posisi atas ( -3px konversi ke rem) */
+  left: 6.25rem; /* Posisi kiri (100px konversi ke rem) */
+  color: #012970;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 1.625rem; /* Ukuran font (26px konversi ke rem) */
+  font-weight: 700;
+  line-height: 1.625rem; /* Line height (26px konversi ke rem) */
+  text-align: left;
+  white-space: nowrap;
+  z-index: 149;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  gap: 1.5625rem; /* Jarak antar elemen (25px konversi ke rem) */
+  position: relative;
+  min-width: 0;
+  padding: 0 1rem 0 0; /* Padding (16px konversi ke rem) */
+  z-index: 152;
+}
+
+.group {
+  flex-shrink: 0;
+  position: relative;
+  width: 1.75rem; /* Lebar (28px konversi ke rem) */
+  height: 1.6875rem; /* Tinggi (27px konversi ke rem) */
+  z-index: 153;
+}
+
+.bell {
+  position: absolute;
+  width: 1.75rem; /* Lebar (28px konversi ke rem) */
+  height: 1.6875rem; /* Tinggi (27px konversi ke rem) */
+  top: 0;
+  left: 0;
+  background: url(./assets/images/ccf94286-2c8a-4b0c-a4f7-c4d306fd0972.png) no-repeat center;
+  background-size: cover;
+  z-index: 154;
+}
+
+.link-1 {
+  flex-shrink: 0;
+  position: relative;
+  width: 8.585rem; /* Lebar (137.578px konversi ke rem) */
+  height: 2.25rem; /* Tinggi (36px konversi ke rem) */
+  z-index: 155;
+}
+
+.profile-image {
+  position: absolute;
+  width: 2.25rem; /* Lebar (36px konversi ke rem) */
+  height: 2.25rem; /* Tinggi (36px konversi ke rem) */
+  top: 50%;
+  left: 0;
+  background: url(./assets/images/62f859dc-e883-4e4b-a950-67f1ae449475.png) no-repeat center;
+  background-size: cover;
+  transform: translate(0, -50%);
+  z-index: 2;
+  border-radius: 1.125rem; /* Border radius (18px konversi ke rem) */
+}
+
+.text {
+  position: absolute;
+  width: 6.348rem; /* Lebar (101.578px konversi ke rem) */
+  height: 1.3125rem; /* Tinggi (21px konversi ke rem) */
+  top: 50%;
+  left: 2.25rem; /* Posisi kiri (36px konversi ke rem) */
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 1.3125rem; /* Tinggi (21px konversi ke rem) */
+  top: 0;
+  left: 0.5rem; /* Posisi kiri (8px konversi ke rem) */
+  color: #012970;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 0.875rem; /* Ukuran font (14px konversi ke rem) */
+  font-weight: 600;
+  line-height: 1.3125rem; /* Line height (21px konversi ke rem) */
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* TEXT "SURAT MASUK" */
+.text-container h1 {
+  color: #012970;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 1.875rem; /* Ukuran font (30px konversi ke rem) */
+  font-weight: 700;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 1.25rem; /* Posisi kiri (20px konversi ke rem) */
+  width: 62.5rem; /* Lebar (1000px konversi ke rem) */
+  z-index: 1;
+}
+
+
+/*TEXT 'SILAHKAN ISI SURAT MASUK' */
+.text-container h2 {
+  color: #0c1018;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 1.25rem; /* Ukuran font (20px konversi ke rem) */
+  font-weight: 500;
+  position: absolute;
+  margin-top: 2.3125rem; /* Margin atas (37px konversi ke rem) */
+  margin-left: 1.375rem; /* Margin kiri (22px konversi ke rem) */
+  width: 62.5rem; /* Lebar (1000px konversi ke rem) */
+  z-index: 1;
+}
+
+/* FONT PILIHAN BAGIAN */
+/* Mengatur font pada pilihan dalam select */
+select {
+  font-family: 'Nunito', sans-serif; /* Menggunakan font Nunito */
+  font-size: 0.875rem; /* Ukuran font (14px konversi ke rem) */
+  color: #333; /* Warna teks */
+  padding: 0.5rem; /* Padding (8px konversi ke rem) */
+  border: 1px solid #ccc; /* Garis batas */
+  border-radius: 0.25rem; /* Sudut border (4px konversi ke rem) */
+  width: 100%; /* Lebar sesuai kebutuhan */
+  box-sizing: border-box; /* Menghitung padding dan border dalam perhitungan lebar */
+}
+
+
+
+      /*SIDEBARRR*/
+      .flex-row {
+          position: relative;
+          width: auto;
+          height: auto;
+          margin: 0;
+          z-index: 159;
+        }
+        
+        .sidebar-section {
+          position: fixed;
+          top: 3.75rem; /* 60px konversi ke rem */
+          left: 0;
+          width: 18.75rem; /* 300px konversi ke rem */
+          height: calc(100vh - 3.75rem); /* 100% - 60px konversi ke rem */
+          background: #ffffff;
+          padding: 1.25rem; /* 20px konversi ke rem */
+          box-shadow: 0.125rem 0 0.3125rem rgba(0, 0, 0, 0.1); /* 2px 0 5px konversi ke rem */
+          z-index: 199;
+        }
+        
+        .sidebar-nav {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          position: relative;
+          width: 18.75rem; /* 300px konversi ke rem */
+          margin: 0;
+          z-index: 160;
+        }
+        
+        .track {
+          flex-shrink: 0;
+          flex-basis: auto;
+          position: relative;
+          height: 1.0625rem; /* 17px konversi ke rem */
+          color: #899bbd;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.6875rem; /* 11px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.03125rem; /* 16.5px konversi ke rem */
+          text-align: left;
+          text-transform: uppercase;
+          white-space: nowrap;
+          z-index: 161;
+        }
+        
+        .link-2 {
+          flex-shrink: 0;
+          position: relative;
+          width: 16.25rem; /* 260px konversi ke rem */
+          height: 2.75rem; /* 44px konversi ke rem */
+          background: #f3f4f2;
+          z-index: 162;
+          border-radius: 0.25rem; /* 4px konversi ke rem */
+        }
+        
+        .file-spreadsheet {
+          position: absolute;
+          width: 1.5rem; /* 24px konversi ke rem */
+          height: 1.5rem; /* 24px konversi ke rem */
+          top: 0.625rem; /* 10px konversi ke rem */
+          left: 0.625rem; /* 10px konversi ke rem */
+          z-index: 164;
+          overflow: hidden;
+        }
+        
+        .group-3 {
+          position: relative;
+          width: 1rem; /* 16px konversi ke rem */
+          height: 1.25rem; /* 20px konversi ke rem */
+          margin: 0.125rem 0 0 0.25rem; /* 2px 0 0 4px konversi ke rem */
+          background: url(./assets/images/15e50af4-5509-4c47-a29e-015da2062758.png)
+            no-repeat center;
+          background-size: 100% 100%;
+          z-index: 165;
+        }
+        
+        .surat-masuk {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          height: 1.4375rem; /* 23px konversi ke rem */
+          top: 0.671875rem; /* 10.75px konversi ke rem */
+          left: 2.5625rem; /* 41px konversi ke rem */
+          color: #012970;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.9375rem; /* 15px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.40625rem; /* 22.5px konversi ke rem */
+          text-align: left;
+          white-space: nowrap;
+          z-index: 163;
+        }
+        
+        .link-4 {
+          flex-shrink: 0;
+          position: relative;
+          width: 16.25rem; /* 260px konversi ke rem */
+          height: 2.75rem; /* 44px konversi ke rem */
+          background: #ffffff;
+          z-index: 166;
+          border-radius: 0.25rem; /* 4px konversi ke rem */
+        }
+        
+        .file-spreadsheet-5 {
+          position: absolute;
+          width: 1.5rem; /* 24px konversi ke rem */
+          height: 1.5rem; /* 24px konversi ke rem */
+          top: 0.625rem; /* 10px konversi ke rem */
+          left: 0.625rem; /* 10px konversi ke rem */
+          z-index: 168;
+          overflow: hidden;
+        }
+        
+        .group-6 {
+          position: relative;
+          width: 1rem; /* 16px konversi ke rem */
+          height: 1.25rem; /* 20px konversi ke rem */
+          margin: 0.125rem 0 0 0.25rem; /* 2px 0 0 4px konversi ke rem */
+          background: url(./assets/images/4a771d3b-0488-40d5-a6a6-a47008f1306c.png)
+            no-repeat center;
+          background-size: 100% 100%;
+          z-index: 169;
+        }
+        
+        .surat-keluar {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          height: 1.4375rem; /* 23px konversi ke rem */
+          top: 0.671875rem; /* 10.75px konversi ke rem */
+          left: 2.5625rem; /* 41px konversi ke rem */
+          color: #012970;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.9375rem; /* 15px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.40625rem; /* 22.5px konversi ke rem */
+          text-align: left;
+          white-space: nowrap;
+          z-index: 167;
+        }
+        
+        .input {
+          display: block;
+          position: relative;
+          height: 1.0625rem; /* 17px konversi ke rem */
+          margin: 0; /* Hapus margin (pixel tidak disebutkan) */
+          color: #899bbd;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.6875rem; /* 11px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.03125rem; /* 16.5px konversi ke rem */
+          text-align: left;
+          text-transform: uppercase;
+          white-space: nowrap;
+          z-index: 170;
+        }
+        
+        .link-7 {
+          position: relative;
+          width: 16.25rem; /* 260px konversi ke rem */
+          height: 2.75rem; /* 44px konversi ke rem */
+          margin: 0; /* Hapus margin */
+          background: #ffffff;
+          z-index: 171;
+          border-radius: 0.25rem; /* 4px konversi ke rem */
+        }
+        
+        .input-surat-masuk {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          height: 1.4375rem; /* 23px konversi ke rem */
+          top: 0.671875rem; /* 10.75px konversi ke rem */
+          left: 2.5625rem; /* 41px konversi ke rem */
+          color: #012970;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.9375rem; /* 15px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.40625rem; /* 22.5px konversi ke rem */
+          text-align: left;
+          white-space: nowrap;
+          z-index: 173;
+        }
+        
+        .flex-column {
+          position: absolute;
+          width: 6.23%; /* Persentase tidak diubah */
+          height: 43.18%; /* Persentase tidak diubah */
+          top: 25%; /* Persentase tidak diubah */
+          left: 5.77%; /* Persentase tidak diubah */
+          z-index: 174;
+        }
+        
+        .download-section {
+          position: absolute;
+          width: 98.77%; /* Persentase tidak diubah */
+          height: 94.74%; /* Persentase tidak diubah */
+          top: 0; /* Posisi tidak diubah */
+          left: 0; /* Posisi tidak diubah */
+          z-index: 174;
+          overflow: hidden;
+        }
+        
+        .icon {
+          position: relative;
+          width: 0.875rem; /* 14px konversi ke rem */
+          height: 0.96875rem; /* 15.5px konversi ke rem */
+          margin: 0.078125rem 0 0 0.0625rem; /* 1.25px konversi ke rem */
+          background: url(./assets/images/5e7758c5-dda7-4e88-b8f4-e62732b908fe.png)
+            no-repeat center;
+          background-size: 100% 100%;
+          z-index: 175;
+        }
+        
+        .unknown-8 {
+          position: absolute;
+          width: 1.0125rem; /* 16.2px konversi ke rem */
+          height: 1rem; /* 16px konversi ke rem */
+          top: 0.1875rem; /* 3px konversi ke rem */
+          left: 0; /* Posisi tidak diubah */
+          font-family: Inter, var(--default-font-family);
+          font-size: 1rem; /* 16px konversi ke rem */
+          font-weight: 400;
+          line-height: 1rem; /* 16px konversi ke rem */
+          background: url(.\assets\images/01285c3c-4353-4c45-aef7-ee6ae3ff669b.png)
+            no-repeat center;
+          background-size: cover;
+          z-index: 172;
+        }
+        
+        .link-9 { /* INPUT SURAT KELUAR */
+          position: relative;
+          width: 16.25rem; /* 260px konversi ke rem */
+          height: 2.75rem; /* 44px konversi ke rem */
+          margin: 0; /* Hapus margin */
+          background: #ffffff;
+          z-index: 176;
+          border-radius: 0.25rem; /* 4px konversi ke rem */
+        }
+        
+        .input-surat-keluar {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          position: absolute;
+          height: 1.4375rem; /* 23px konversi ke rem */
+          top: 0.671875rem; /* 10.75px konversi ke rem */
+          left: 2.5625rem; /* 41px konversi ke rem */
+          color: #012970;
+          font-family: Open Sans, var(--default-font-family);
+          font-size: 0.9375rem; /* 15px konversi ke rem */
+          font-weight: 600;
+          line-height: 1.40625rem; /* 22.5px konversi ke rem */
+          text-align: left;
+          white-space: nowrap;
+          z-index: 178;
+        }
+        
+        .flex-column-a {
+          position: absolute;
+          width: 6.23%; /* Persentase tidak diubah */
+          height: 43.18%; /* Persentase tidak diubah */
+          top: 25%; /* Persentase tidak diubah */
+          left: 5.77%; /* Persentase tidak diubah */
+          z-index: 179;
+        }
+        
+        .download-section-b {
+          position: absolute;
+          width: 98.77%; /* Persentase tidak diubah */
+          height: 94.74%; /* Persentase tidak diubah */
+          top: 0; /* Posisi tidak diubah */
+          left: 0; /* Posisi tidak diubah */
+          z-index: 179;
+          overflow: hidden;
+        }
+        
+        .icon-c {
+          position: relative;
+          width: 0.875rem; /* 14px konversi ke rem */
+          height: 0.96875rem; /* 15.5px konversi ke rem */
+          margin: 0.078125rem 0 0 0.0625rem; /* 1.25px konversi ke rem */
+          background: url(./assets/images/2f63a975-2851-4a52-b797-9bf9bb5dcffb.png)
+            no-repeat center;
+          background-size: 100% 100%;
+          z-index: 180;
+        }
+        
+      
+      /*----------------TAMBAHAN-----------------*/
+      /* Menghilangkan dekorasi dan mengatur warna link */
+      a {
+          text-decoration: none;
+          color: inherit;
+        }
+  
+        a:hover .input-surat-masuk,
+        a:hover .input-surat-keluar,
+        a:hover .surat-masuk,
+        a:hover .surat-keluar {
+          text-decoration: underline;
+        }
+        
+       h1 {
+color: #012970;
+font-family: Nunito, var(--default-font-family);
+font-size: 1.875rem; /* 30px konversi ke rem */
+font-weight: 700;
+margin-top: 1.875rem; /* 30px konversi ke rem */
+padding: 0;
+}
+
+h2 {
+color: #000000;
+font-family: Nunito, var(--default-font-family);
+font-size: 1.25rem; /* 20px konversi ke rem */
+font-weight: 600;
+margin-top: -1.25rem; /* -20px konversi ke rem */
+margin-left: 0.125rem; /* 2px konversi ke rem */
+}
+
+.status-container h2 {
+margin-top: 0.3125rem; /* 5px konversi ke rem */
+color: #012970;
+font-family: Nunito, var(--default-font-family);
+}
+
+.tablee {
+border-radius: 0.5rem; /* 8px konversi ke rem */
+background-color: #ffffff;
+box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px konversi ke rem untuk vertical shadow */
+padding: 1.25rem; /* 20px konversi ke rem */
+position: relative;
+height: auto;
+width: auto;
+box-sizing: border-box;
+max-width: 30rem; /* 480px konversi ke rem */
+min-width: 30rem; /* 480px konversi ke rem */
+}
+
+.tablee table {
+width: auto;
+border-collapse: collapse;
+}
+
+.tablee th, .tablee td {
+padding: 0.625rem 0.75rem; /* 10px 12px konversi ke rem */
+text-align: left;
+border: none;
+font-family: Nunito, var(--default-font-family);
+}
+
+.tablee th {
+background-color: #ffffff;
+color: #000000;
+font-weight: bold;
+}
+
+.tablee tr:nth-child(even) {
+background-color: #ffffff; /* Warna latar belakang baris genap */
+}
+
+.tablee td a {
+color: #000000;
+text-decoration: none;
+}
+
+      
+  
+      
+        
+        
+        
+  
+.detail-button {
+  display: inline-block;
+  padding: 0.375rem 0.75rem; /* 6px 12px konversi ke rem */
+  font-size: 0.875rem; /* 14px konversi ke rem */
+  color: #ffffff;
+  background-color: #012970;
+  border-radius: 0.25rem; /* 4px konversi ke rem */
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #012970;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.detail-button:hover {
+  background-color: #012970;
+  border-color: #012970;
+}
+
+/* Styling untuk tabel data */
+table {
+  width: 100%; /* Pastikan tabel mengisi lebar kontainer */
+  border-collapse: collapse; /* Gabungkan border tabel */
+  margin-top: 1.25rem; /* 20px konversi ke rem */
+}
+
+table th, table td {
+  padding: 0.75rem 0.9375rem; /* 12px 15px konversi ke rem */
+  border: 1px solid #f9f9f9; /* Border sel tabel */
+  text-align: left; /* Rata kiri teks dalam sel tabel */
+}
+
+table th {
+  background-color: #012970; /* Warna latar belakang header tabel */
+  color: #ffffff; /* Warna teks header tabel (tambahan untuk visibilitas) */
+  font-weight: bold; /* Berat font header tabel */
+}
+
+/* Styling untuk konten utama */
+.content-section {
+  padding: 1.25rem; /* 20px konversi ke rem */
+  background-color: #ffffff; /* Warna latar belakang konten */
+  border-radius: 0.5rem; /* 8px konversi ke rem */
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); /* 2px konversi ke rem untuk vertical shadow */
+  margin-left: 1.875rem; /* 30px konversi ke rem */
+  position: absolute;
+}
+
+.btn-edit {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px 20px konversi ke rem */
+  bottom: 1.25rem; /* 20px konversi ke rem */
+  right: 9.0625rem; /* 145px konversi ke rem */
+  background-color: #012970; /* Warna latar belakang tombol */
+  color: #ffffff; /* Warna teks tombol */
+  font-family: 'Open Sans', sans-serif; /* Font */
+  font-weight: 600; /* Berat font */
+  text-decoration: none; /* Hapus garis bawah */
+  border-radius: 0.25rem; /* 4px konversi ke rem */
+  border: 1px solid transparent; /* Border default */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+  position: fixed; /* Menetapkan posisi absolut */
+}
+
+.btn-edit:hover {
+  background-color: #0056b3; /* Warna latar belakang saat tombol ditekan */
+}
+
+.status-container {
+  width: auto; /* Sesuaikan lebar sesuai kebutuhan */
+  padding: 1.25rem; /* 20px konversi ke rem */
+  border-radius: 0.5rem; /* 8px konversi ke rem */
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); /* 2px konversi ke rem untuk vertical shadow */
+  min-width: 30rem; /* 480px konversi ke rem */
+  margin-top: 1.25rem; /* 20px konversi ke rem */
+}
+
+.status-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.25rem; /* 20px konversi ke rem */
+}
+
+.timeline {
+  border-left: 0.1875rem solid #012970; /* 3px konversi ke rem */
+  padding-left: 1.25rem; /* 20px konversi ke rem */
+}
+
+.timeline-item {
+  margin-bottom: 1.25rem; /* 20px konversi ke rem */
+  position: relative;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #012970;
+  font-family: Nunito, var(--default-font-family);
+}
+
+.timeline-content {
+  background-color: #fff;
+  border: 0.0625rem solid #ccc; /* 1px konversi ke rem */
+  border-radius: 0.3125rem; /* 5px konversi ke rem */
+  padding: 0.625rem; /* 10px konversi ke rem */
+  margin-top: 0.3125rem; /* 5px konversi ke rem */
+  font-family: Nunito, var(--default-font-family);
+}
+
+
+
+/* CSS untuk elemen hr */
+.timeline-divider {
+  border: none; /* Menghapus border default */
+  border-top: 0.0625rem solid #012970; /* 1px konversi ke rem */
+  margin: 0.625rem 0; /* 10px konversi ke rem */
+}
+
+.small-image {
+  width: 2.5rem; /* 40px konversi ke rem */
+  height: 2.5rem; /* 40px konversi ke rem */
+  position: absolute;
+  left: 0.625rem; /* 10px konversi ke rem */
+  top: 0.125rem; /* 2px konversi ke rem */
+}
+
+.small-image2 {
+  width: 2.5rem; /* 40px konversi ke rem */
+  height: 2.5rem; /* 40px konversi ke rem */
+  position: absolute;
+  left: 3.1875rem; /* 51px konversi ke rem */
+  top: 0; /* Tidak ada perubahan */
+}
+
+.lembar {
+  border-radius: 0.5rem; /* 8px konversi ke rem */
+  background-color: #ffffff; /* Warna latar belakang putih untuk kontainer */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Bayangan halus di sekitar kontainer */
+  padding: 1.25rem; /* 20px konversi ke rem */
+  padding-top: 0.3125rem; /* 5px konversi ke rem */
+  position: relative;
+  height: auto; /* Sesuaikan tinggi dengan konten */
+  width: auto; /* Ikuti lebar konten */
+  box-sizing: border-box; /* Sertakan padding dan batas dalam perhitungan lebar */
+  max-width: 30rem; /* 480px konversi ke rem */
+  min-width: 30rem; /* 480px konversi ke rem */
+}
+
+
+.lembar table {
+  width: 28.125rem; /* 450px konversi ke rem */
+  border-collapse: collapse; /* Menghapus batas antar sel */
+}
+
+.lembar th, .lembar td {
+  padding: 0.625rem 0.75rem; /* 10px 12px konversi ke rem */
+  text-align: left; /* Rata kiri untuk teks */
+  border: none; /* Menghapus batas */
+  font-family: Nunito, var(--default-font-family); /* Font yang digunakan */
+}
+
+.lembar th {
+  background-color: #ffffff; /* Warna latar belakang untuk sel header */
+  color: #000000; /* Warna teks hitam untuk header */
+  font-weight: bold; /* Bold untuk teks header */
+  width: 9.375rem; /* 150px konversi ke rem */
+}
+
+.lembar tr:nth-child(even) {
+  background-color: #ffffff; /* Warna latar belakang terang untuk baris genap */
+}
+
+.lembar tr {
+  max-width: 6.25rem; /* 100px konversi ke rem */
+}
+
+.lembar td a {
+  color: #000000; /* Warna teks hitam untuk tautan */
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  max-width: 18.75rem; /* 300px konversi ke rem */
+}
+
+.lembar h1 {
+  font-size: 1.25rem; /* 20px konversi ke rem */
+  margin-left: 0.625rem; /* 10px konversi ke rem */
+}
+
+.btn-kembali,
+.btn-edit {
+  display: inline-block; /* Mengatur tampilan menjadi blok untuk memudahkan penataan */
+  padding: 0.625rem 1.25rem; /* 10px 20px konversi ke rem */
+  font-size: 1rem; /* 16px konversi ke rem */
+  background-color: #012970; /* Warna latar belakang tombol */
+  color: #ffffff; /* Warna teks tombol */
+  font-family: 'Open Sans', sans-serif; /* Font */
+  font-weight: 600; /* Berat font */
+  text-decoration: none; /* Menghapus garis bawah */
+  border-radius: 0.25rem; /* 4px konversi ke rem */
+  border: 1px solid transparent; /* Border default */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+  position: fixed; /* Menetapkan posisi tetap */
+  z-index: 999; /* Agar tombol berada di atas elemen lainnya */
+}
+
+.btn-edit {
+  bottom: 1.25rem; /* 20px konversi ke rem */
+  right: 9.375rem; /* 150px konversi ke rem */
+}
+
+.btn-kembali {
+  bottom: 1.25rem; /* 20px konversi ke rem */
+  right: 1.875rem; /* 30px konversi ke rem */
+}
+
+.btn-kembali:hover,
+.btn-edit:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
